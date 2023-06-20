@@ -1,12 +1,14 @@
 .titulo{
-    color: orange;
-    text-align: center;
+    color: white !important;
+    font-weight: bold !important;
 }
 
-.img{
-    width: 400px;
-    height: 200px;
-    display: block;
-    margin: 0 auto;
+.botao{
+    border-color: orange !important;
+    background-color:#F5DEB3 !important;
+    color: white !important;
+}
 
+.postagens{
+    background-color: white !important;
 }

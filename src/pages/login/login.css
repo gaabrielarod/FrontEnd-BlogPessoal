@@ -1,0 +1,17 @@
+.texto{
+    font-weight: bold !important;
+    color: black !important;
+}
+
+.imagem{
+    background-image: url(https://www.pngkey.com/png/full/416-4164667_0-mandala-png.png);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
