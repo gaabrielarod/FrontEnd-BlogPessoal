@@ -1,0 +1,28 @@
+.imagemCadastro{
+    background-size: cover;
+    background-position: center;
+    width: 100vh;
+    min-height: 80vh;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.textos2 {
+    background-color: #CD853F;
+    padding: 20px;
+    font-weight: bold !important;
+    font-size: 2rem !important;
+    border-radius: 10px;
+    box-shadow: 1px #F5DEB3;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.btnCancelar {
+    margin-right: 20px !important;
+    font-weight: bold !important;
+}
+
+.btnCadastrarse{
+    font-weight: bold !important;
+}

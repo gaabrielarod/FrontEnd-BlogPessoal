@@ -41,7 +41,7 @@ function Footer(){
                 </Box>
 
                 <Box className="box2">
-                    <Box paddingTop="{1}">
+                    <Box paddingTop="{2}">
                         <Typography
                         variant="subtitle2"
                         align="center"
