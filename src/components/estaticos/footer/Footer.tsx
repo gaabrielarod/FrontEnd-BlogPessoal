@@ -1,4 +1,5 @@
-import { Box, Grid, Typography } from '@material-ui/core';
+import { Box } from '@mui/material';
+import { Grid, Typography } from '@material-ui/core';
 import React from 'react'
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";

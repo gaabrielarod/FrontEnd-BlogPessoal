@@ -3,8 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Service';
 import "./login.css";
-import { Box, Button, Grid, TextField } from "@material-ui/core";
-import { Typography } from "@mui/material"
+import { Button, Grid, TextField } from "@material-ui/core";
+import { Typography, Box } from "@mui/material"
 import UserLogin from '../../models/UserLogin';
 
 
@@ -18,27 +18,27 @@ function Login() {
       usuario: "",
       senha: "",
       token: "",
-    });
+    })
   
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
       setUserLogin({
         ...userLogin,
         [e.target.name]: e.target.value,
-      });
-      //console.log(JSON.stringify(userLogin));
-    };
+      })
+      
+    }
   
     useEffect(() => {
       if (token != "") {
         navigate("/home");
       }
-    }, [token]);
+    }, [token])
   
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
       e.preventDefault();
 
       try {
-        await login(`/usuario/logar`, userLogin, setToken);
+        await login(`/usuarios/logar`, userLogin, setToken);
         alert("Usuário logado com sucesso!");
       } catch (error) {
         alert("Dados do usuário não encontrados. Por favor, verifique as informações do login.");
@@ -100,7 +100,7 @@ function Login() {
                                 Não possui uma conta?
                             </Typography>
                         </Box>
-                        <Link to='/cadastro'>
+                        <Link to='/cadastrousuario'>
                             <Typography
                                 variant="subtitle1"
                                 gutterBottom

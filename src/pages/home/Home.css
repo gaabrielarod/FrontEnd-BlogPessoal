@@ -1,6 +1,11 @@
 .titulo{
-    color: white !important;
+    color: rgba(221, 111, 22, 0.853) !important;
     font-weight: bold !important;
+    font-size: 250% !important;
+}
+
+.titulo1{
+    font-size: 100% !important;;
 }
 
 .botao{

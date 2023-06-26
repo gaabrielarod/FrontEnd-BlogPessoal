@@ -1,9 +1,9 @@
 interface User{
     
-    id: number
-    nome: string
-    usuario: string
-    senha: string
+    id: number;
+    nome: string;
+    usuario: string;
+    senha: string;
 }
 
-export default User
+export default User;

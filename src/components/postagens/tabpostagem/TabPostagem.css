@@ -1,3 +1,12 @@
-.titulo{
-    font-weight: bold;
+.tituloSobre{
+    font-weight:bold;
+ }
+
+ .todasPostagens{
+    background-color: #CD853F !important;
+
+ }
+
+ .barraHome{
+    background-color: #CD853F !important;
  }

@@ -1,17 +1,18 @@
-import { Box, Button, Grid, TextField } from '@material-ui/core'
-import { Typography } from '@mui/material'
-import { Link, useNavigate } from 'react-router-dom'
+import { Button, Grid, TextField } from '@material-ui/core'
+import { Typography, Box } from '@mui/material'
+import { useNavigate } from 'react-router'
+import { Link } from 'react-router-dom'
 import { cadastroUsuario } from '../../services/Service'
 import { useState, useEffect, ChangeEvent } from 'react'
 import User from '../../models/User'
-import './cadastro.css'
+import './CadastroUsuario.css'
 
-export default function Cadastro() {
+export default function CadastroUsuario() {
     let navigate = useNavigate();
-    const [confirmarSenha, setConfirmarSenha] = useState<string>(" ")
+    const [confirmarSenha, setConfirmarSenha] = useState<string>("")
     const [user, setUser] = useState<User>({
         id: 0, nome: "", usuario: "", senha: ""
-    });
+    })
 
     const [userResult, setUserResult] = useState<User>({
         id: 0, nome: "", usuario: "", senha: ""
@@ -118,7 +119,7 @@ export default function Cadastro() {
                             />
 
                             <Box marginTop={2} textAlign="center">
-                                <Link to="/login">
+                                <Link to="/login" className='text-decorator-none'>
                                     <Button
 
                                         className="btnCancelar"

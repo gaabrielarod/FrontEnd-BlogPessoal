@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App.tsx'
 import './index.css'
-import Home from './pages/home/home.tsx'
+import Home from './pages/home/Home.tsx'
 
 
 ReactDOM.render(
