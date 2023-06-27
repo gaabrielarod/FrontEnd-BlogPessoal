@@ -6,13 +6,16 @@ import "./login.css";
 import { Button, Grid, TextField } from "@material-ui/core";
 import { Typography, Box } from "@mui/material"
 import UserLogin from '../../models/UserLogin';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/Action';
 
 
 
 function Login() {
     let navigate = useNavigate();
+    const dispatch = useDispatch();
   
-    const [token, setToken] = useLocalStorage("token");
+    const [token, setToken] = useState('');
     const [userLogin, setUserLogin] = useState<UserLogin>({
       id: 0,
       usuario: "",
@@ -30,6 +33,7 @@ function Login() {
   
     useEffect(() => {
       if (token != "") {
+        dispatch(addToken(token))
         navigate("/home");
       }
     }, [token])

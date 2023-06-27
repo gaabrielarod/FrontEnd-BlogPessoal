@@ -6,12 +6,16 @@ import './ListaPostagem.css';
 import { busca } from '../../../services/Service';
 import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/TokenReducer';
 
 function ListaPostagem() {
-  const [posts, setPosts] = useState<Postagem[]>([])
-  const [token, setToken] = useLocalStorage ('token');
   let navigate = useNavigate();
-
+  const [posts, setPosts] = useState<Postagem[]>([])
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+  );
+  
   useEffect(() => {
     if (token == "") {
       alert("Você precisa estar logado")
