@@ -4,13 +4,19 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 import './Navbar.css'
+import { useDispatch, useSelector } from "react-redux";
+import { TokenState } from "../../../store/tokens/TokenReducer";
+import { addToken } from "../../../store/tokens/Action";
 
 function Navbar() {
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
     let navigate = useNavigate();
+    const dispatch = useDispatch();
 
     function goLogout() {
-        setToken('')
+        dispatch(addToken(''));
         alert("Usuário deslogado")
         navigate('/login')
     }
