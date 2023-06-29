@@ -1,19 +1,26 @@
 .titulo{
-    color: rgba(221, 111, 22, 0.853) !important;
+    color: #CD853F !important;
     font-weight: bold !important;
     font-size: 250% !important;
 }
 
 .titulo1{
-    font-size: 100% !important;;
+    font-size: 100% !important;
+
 }
 
 .botao{
-    border-color: orange !important;
-    background-color:#F5DEB3 !important;
-    color: white !important;
+    border-color: #CD853F !important;
+    background-color:#f3f1c5 !important;
+    color: #CD853F !important;
+    font-weight: bold !important;
+
 }
 
 .postagens{
-    background-color: white !important;
+    background-color: #f3f1c5 !important;
+}
+
+.caixa{
+    background-color: #f3f1c5 !important;
 }

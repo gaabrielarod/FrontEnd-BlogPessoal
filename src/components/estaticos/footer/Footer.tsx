@@ -32,7 +32,7 @@ function Footer() {
                             alignItems="center"
                             justifyContent="center"
                         >
-                            <Typography variant="h5" align="center" gutterBottom className="textoFooter">
+                            <Typography variant="h5" align="center" gutterBottom className="textoFooter1">
                                 Siga-me nas redes sociais
                             </Typography>
                         </Box>

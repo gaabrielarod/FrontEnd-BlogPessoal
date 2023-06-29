@@ -8,6 +8,7 @@ import { Typography, Box } from "@mui/material"
 import UserLogin from '../../models/UserLogin';
 import { useDispatch } from 'react-redux';
 import { addToken } from '../../store/tokens/Action';
+import { toast } from 'react-toastify';
 
 
 
@@ -43,9 +44,27 @@ function Login() {
 
       try {
         await login(`/usuarios/logar`, userLogin, setToken);
-        alert("Usuário logado com sucesso!");
+        toast.success('Usuário logado com sucesso', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
       } catch (error) {
-        alert("Dados do usuário não encontrados. Por favor, verifique as informações do login.");
+        toast.error('Dados não encontrados. Por favor, cadastre-se ou verifique suas informações', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
       }
     }
 
