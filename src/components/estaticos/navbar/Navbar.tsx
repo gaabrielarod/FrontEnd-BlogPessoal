@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokenReducer";
 import { addToken } from "../../../store/tokens/Action";
 import { toast } from "react-toastify";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -70,10 +71,10 @@ function Navbar() {
                         </Box>
                     </Link>
 
-                    <Box mx={1} className="cursor" onClick={goLogout}>
-                        <Typography variant="h6" color="white">
-                            logout
-                        </Typography>
+                    <Box mx={1} onClick={goLogout}>
+        
+                            <LogoutIcon className="cursor" />
+                        
                     </Box>
 
 
