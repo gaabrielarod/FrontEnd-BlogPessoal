@@ -17,7 +17,7 @@ function TabPostagem() {
         <AppBar position="static" className='barraHome'>
           <Tabs centered indicatorColor="secondary" onChange={handleChange}>
             <Tab label="Todas as postagens" value="1" className='todasPostagens'/>
-            <Tab label="Sobre-nós" value="2" className="sobre" />
+            <Tab label="Sobre mim" value="2" className="sobre" />
           </Tabs>
         </AppBar>
         <TabPanel value="1" >
@@ -27,7 +27,7 @@ function TabPostagem() {
         </TabPanel>
         <TabPanel value="2">
           <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="tituloSobre">Sobre mim</Typography>
-          <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Sejam muito bem-vindos ao meu blog pessoal, um lugar onde irei falar sobre coisas que gosto e coisas que não gosto também! fiquem a vontade 🧡 </Typography>
+          <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Sejam muito bem-vindos ao meu blog pessoal, um lugar onde irei falar sobre coisas que gosto e coisas que não gosto também! fiquem a vontade para visualizar o meu blog🧡 </Typography>
         </TabPanel>
       </TabContext>
     </>
